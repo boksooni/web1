@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="google.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="google.js" defer></script>
+    <title>Google Clone</title>
+</head>
+<body>
+  <!-- 전체 감싸는 박스 -->
+  <div class="container"> 
+    <!-- <nav>
+      <button onclick="signIn()" class="login">로그인</button>
+      <button onClick="dark()" class="dark">다크모드</button>
+    </nav>  -->
+    <div class="event">
+      <div class="BtnCon">
+      <button id="colorBtn" class="eventBtn">배경 색상 변경</button>
+      <button id="logInBtn" class="eventBtn">로그인</button>
+      </div>
+      <p id="logInCmt"></p>
+    </div>
+    <!-- 페이지 로고 -->
+    <div class="logo">
+      <!-- <img src="image/google.png"> -->
+      Google
+    </div>
+    <!-- 페이지 검색창 박스-->
+    <div class="searchContainer">
+      
+      <form action="https://www.google.com/search" method="GET">
+        <!-- 검색 아이콘 -->
+        <span class="material-symbols-outlined">
+          search
+        </span>
+        <!-- 검색창 -->
+        <input class="searchInput" name='q' type="text" placeholder="Google검색 또는 URL 입력" />
+      </form>
+    </div>
+    <!--전체 북마크 박스 -->
+    <div class="bookmarkContainer">
+      <!-- 하나의 북마크 링크 연결 -->
+      <a href="https://www.naver.com">
+        <!-- 하나의 북마크 박스 -->
+        <div class="bookmarkWrapper">
+          <!-- 북마크 원형 배경 -->
+          <div class="bookmarkCircle">
+            <!-- 북마크 페이지 로고 이미지 -->
+            <img src="image/naver.png" width="24px" height="24px">
+          </div>
+          <!-- 북마크 페이지명 -->
+          <div>NAVER</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com">
+        <div class="bookmarkWrapper">
+          <div class="bookmarkCircle">
+            <img src="image/youtube.png" width="24px" height="24px">
+          </div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <a href="https://scratch.mit.edu/">
+        <div class="bookmarkWrapper">
+          <div class="bookmarkCircle">
+            <img src="image/Scratch.png" width="24px" height="24px">
+          </div>
+          <div>Scratch</div>
+        </div>
+      </a>
+      <div class="bookmarkWrapper">
+        <div class="bookmarkCircle"></div>
+        <div>Github</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

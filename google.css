@@ -1,0 +1,104 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #F5E1DA;
+}
+/* 전체박스 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.event {
+  overflow: hidden;
+}
+.BtnCon {
+  /* margin-left: 1000px; */
+  clear: right;
+  float: right;
+}
+.eventBtn {
+  margin-top: 10px;
+  border: none;
+  background-color:transparent;
+}
+#logInCmt {
+  font-size: 20px;
+}
+/* 페이지로고 */
+.logo {
+  margin-top: 160px;
+  margin-bottom: 30px;
+  font-size: 100px;
+  color: #d7886d;
+  font-weight: 600;
+}
+/* 검색창 박스 */
+.searchContainer {
+  margin-top: 20px;
+  position: relative;
+}
+/* 검색 아이콘 */
+.material-symbols-outlined {
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+  font-size: 22px !important;
+  color: #5f6368;
+}
+/* 검색창 */
+.searchInput {
+  width: 540px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 1px 6px 0 #9c9c9d;;
+  font-size: 16px;
+  padding: 1px 44px 1px 52px;
+}
+/* 검색창 placeholder */
+.searchInput::placeholder{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #5f6368;
+}
+/* 북마크박스 */
+.bookmarkContainer {
+  margin-top: 40px;
+  display: flex;
+}
+/* 링크태그 색상변경 지우기 */
+a{
+  text-decoration: none;
+  color: black;
+}
+/* 하나의 북마크 박스 */
+.bookmarkWrapper {
+  width: 112px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 13px;
+}
+/* 하나의 북마크 박스 마우스 호버 */
+.bookmarkWrapper:hover {
+  border-radius: 5px;
+  background-color: 	#bebebe;
+  opacity: 0.8;
+}
+/* 하나의 북마크 원형배경 */
+.bookmarkCircle {
+  background-color:#d7886d;;
+  width: 48px;
+  height: 48px;
+  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
